@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="public/styles.css">
 </head>
 <body>
+    <div id="startScreen" class="overlay">
+        <div class="modal">
+            <h2>Select Your Pokémon Type</h2>
+            <button class="type-btn" data-type="fire">Fire</button>
+            <button class="type-btn" data-type="water">Water</button>
+            <button class="type-btn" data-type="grass">Grass</button>
+        </div>
+    </div>
+
     <div class="card">
         <header>
             <h1>Pokémon Chess on Canvas</h1>
@@ -16,6 +25,15 @@
         <canvas id="gameCanvas" width="600" height="600"></canvas>
     </div>
 
+    <div id="battleModal" class="overlay hidden">
+        <div class="modal">
+            <h2>Battle!</h2>
+            <p>Choose your move:</p>
+            <div id="moveButtons"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/1.0.0/chess.min.js"></script>
     <script src="public/script.js"></script>
 </body>
 </html>
